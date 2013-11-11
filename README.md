@@ -2,6 +2,8 @@ QX10_takePicture
 ====
 PQI Air Penを使ってSony DSC-QX10のシャッターを切るテスト。
 
+* ![Fig.1](http://farm3.staticflickr.com/2817/10797566114_c9349c7320_n.jpg)
+
 参考URL
 ====
 * [RICOH THETA HACKS! - 物理リモートシャッターをつくる (Building physical THETA remote Controller) - MobileHackerz](http://mobilehackerz.jp/contents/Review/RICOH_THETA/Remote)
