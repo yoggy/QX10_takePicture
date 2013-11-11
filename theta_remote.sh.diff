@@ -1,0 +1,29 @@
+--- theta_remote.sh.org	2013-11-11 20:24:51.000000000 +0900
++++ theta_remote.sh	2013-11-11 20:21:29.000000000 +0900
+@@ -65,7 +65,6 @@
+ done
+ 
+ killall "rc"
+-/tmp/www/ftp/sda1/theta/theta_proc.sh $theta_ip $theta_port $trigger_port&
+ 
+ while [ 1 ]
+ do
+@@ -78,17 +77,7 @@
+ 	done
+ 	
+ 	# Shutter
+-	/tmp/www/ftp/sda1/theta/ThetaShutterTrig $trigger_port 0
+-
+-	# long press?
+-	/tmp/www/ftp/sda1/theta/sleepms 500
+-	read trig < $trigger_gpio
+-	if test ${trig} -eq 0
+-	then
+-		# bracket shutter
+-		/tmp/www/ftp/sda1/theta/ThetaShutterTrig $trigger_port 2000
+-		/tmp/www/ftp/sda1/theta/ThetaShutterTrig $trigger_port -2000
+-	fi
++	/tmp/www/ftp/sda1/theta/QX10_takePicture 10.0.0.1 10000
+ 
+ 	# Wait for release button
+ 	while [ $trig -eq 0 ]
