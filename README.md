@@ -15,7 +15,7 @@ PQI Air Penを使ってSony DSC-QX10のシャッターを切るテスト。
 ほぼ手順は同じです。
 
 * PQI Air PenとDSC-QX10のWiFi接続の設定をする
-  * SSID: DIRECT????:DSC-QX10のAPに接続するように、http://192.168.200.1/から設定
+  * SSID: DIRECT????:DSC-QX10のAPに接続するように、http://192.168.200.1/ から設定
 * PQI Air Penに刺すmicroSDにThetaShutter_PQIAirPen002.zipを展開
 * [theta_remote.sh](https://raw.github.com/yoggy/QX10_takePicture/master/theta_remote.sh)と[QX10_takePicture](https://github.com/yoggy/QX10_takePicture/raw/master/QX10_takePicture)をthetaディレクトリにコピーする
 * DSC-QX10の電源を先に入れ、次にmicroSDを刺してPQI Air Penを起動
